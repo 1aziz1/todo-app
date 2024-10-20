@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <!-- Card Container for a more polished look -->
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="mb-0">Update Task</h3>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <!-- Assuming your form fields are rendered via Django template tags -->
+                        {{ form}}
+
+                        <div class="text-center mt-4">
+                            <input class="btn btn-success btn-lg px-5" type="submit" value="Update Task">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
